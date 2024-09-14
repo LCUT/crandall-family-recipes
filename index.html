@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crandall Family Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Crandall Family Recipes</h1>
+    <nav>
+      <ul>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#recipeForm">Submit a Recipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="login">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div id="loginMessage"></div>
+  </section>
+
+  <section id="register">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <input type="text" id="register-username" placeholder="Username" required>
+      <input type="email" id="register-email" placeholder="Email" required>
+      <input type="password" id="register-password" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+    <div id="registerMessage"></div>
+  </section>
+
+  <section id="recipeForm" style="display:none;">
+    <h2>Submit a Recipe</h2>
+    <form id="recipeFormSubmit">
+      <input type="text" id="recipe-title" placeholder="Recipe Title" required>
+      <textarea id="recipe-ingredients" placeholder="Ingredients" required></textarea>
+      <button type="submit">Save Recipe</button>
+    </form>
+    <div id="recipeMessage"></div>
+  </section>
+
+  <section id="recipeList" style="display:none;">
+    <h2>Your Saved Recipes</h2>
+    <ul id="recipes">
+      <!-- Saved recipes will appear here -->
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Crandall Family Recipes</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
